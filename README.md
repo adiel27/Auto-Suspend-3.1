@@ -4,7 +4,7 @@ AutoSuspend is a lightweight C-based Windows utility that automatically monitors
 
 
 
-<h2>🔧 Features</h2>h2>
+<h2>🔧 Features</h2>
 
 - ✅ Automatically suspends/resumes processes based on CPU activity
 - ✅ Detects processes with visible windows
@@ -53,7 +53,7 @@ gcc main.c process_utils.c window_utils.c cpu_utils.c log_utils.c notify_utils.c
 
 - Uses Windows APIs: `CreateToolhelp32Snapshot`, `SuspendThread`, `GetProcessTimes`, etc.
 - Written entirely in C (not C++)
-- Suitable for integration with thermal-aware systems or Snapdragon blueprints
+
 
 
 <h2>📜 License</h2>
@@ -62,7 +62,7 @@ This project is free to use and modify for personal, educational, or research pu
 
 AutoSuspend は軽量な C 言語ベースの Windows ユーティリティで、アクティブなプロセスを自動的に監視し、アイドル状態のものを一時停止してシステムリソースを節約します。特に制約のあるハードウェア環境で、パフォーマンスや発熱効率を求めるユーザーに最適です。
 
-🔧 機能
+<h2>🔧 機能 </h2>
 ✅ CPU アクティビティに基づいてプロセスを自動的に一時停止／再開
 
 ✅ 可視ウィンドウを持つプロセスを検出
@@ -79,7 +79,7 @@ AutoSuspend は軽量な C 言語ベースの Windows ユーティリティで�
 
 ✅ ネットワーク監視機能によりダウンロード中のファイルやアプリの失敗を防止
 
-🚀 ビルド手順
+<h2>🚀 ビルド手順 </h2>
 Code::Blocks を使用する場合
 MinGW 付きの Code::Blocks をインストール
 
@@ -96,7 +96,8 @@ psapi
 GCC（コマンドライン）を使用する場合
 bash
 gcc main.c process_utils.c window_utils.c cpu_utils.c log_utils.c notify_utils.c -o AutoSuspend.exe -lpsapi -Wall
-🖥️ 使い方
+
+<h2>🖥️ 使い方</h2>
 AutoSuspend.exe を起動
 
 起動通知が表示され、プログラムが稼働していることを確認
@@ -107,19 +108,18 @@ AutoSuspend.exe を起動
 
 すべての動作は service_log.txt に記録され、ターミナルにも表示されます
 
-⚙️ カスタマイズ
+<h2>⚙️ カスタマイズ</h2>
 除外リストは process_utils.c 内で編集可能
 
 監視間隔は main.c の Sleep(10000) を変更して調整可能
 
 再開できないハングしたプロセスは動的に除外リストへ追加
 
-🧠 技術ノート
+<h2>🧠 技術ノート</h2>
 使用する Windows API: CreateToolhelp32Snapshot, SuspendThread, GetProcessTimes など
 
 すべて C 言語で記述（C++ ではない）
 
-サーマル制御システムや Snapdragon 設計との統合に適しています
 
-📜 ライセンス
+<h2>📜 ライセンス</h2>
 本プロジェクトは個人利用、教育目的、研究目的で自由に使用・改変可能です。商用配布の場合は、必ず著作権表示を含めてください。
