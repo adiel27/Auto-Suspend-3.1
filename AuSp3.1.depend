@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1763618319 source:d:\my code and dev\ausp3.1\cpu_utils.c
+	"cpu_utils.h"
+	<psapi.h>
+	<stdio.h>
+
+1763618296 d:\my code and dev\ausp3.1\cpu_utils.h
+	<windows.h>
+
+1763618420 source:d:\my code and dev\ausp3.1\log_utils.c
+	"log_utils.h"
+	<stdio.h>
+
+1763618397 d:\my code and dev\ausp3.1\log_utils.h
+	<windows.h>
+
+1763618493 source:d:\my code and dev\ausp3.1\main.c
+	<windows.h>
+	<stdio.h>
+	"process_utils.h"
+
+1763626616 d:\my code and dev\ausp3.1\process_utils.h
+	<windows.h>
+
+1763628121 source:d:\my code and dev\ausp3.1\process_utils.c
+	"process_utils.h"
+	"fallback_utils.h"
+	"window_utils.h"
+	"cpu_utils.h"
+	"log_utils.h"
+	"network_utils.h"
+	<tlhelp32.h>
+	<psapi.h>
+	<string.h>
+
+1763627491 d:\my code and dev\ausp3.1\window_utils.h
+	<windows.h>
+
+1763627499 source:d:\my code and dev\ausp3.1\window_utils.c
+	"window_utils.h"
+	<windows.h>
+
+1763627418 source:d:\my code and dev\ausp3.1\fallback_utils.c
+	"fallback_utils.h"
+	"window_utils.h"
+	<string.h>
+	<tlhelp32.h>
+
+1763627372 d:\my code and dev\ausp3.1\fallback_utils.h
+	<windows.h>
+
+1763628042 source:d:\my code and dev\ausp3.1\network_utils.c
+	"network_utils.h"
+	<iphlpapi.h>
+	<stdlib.h>
+
+1763628026 d:\my code and dev\ausp3.1\network_utils.h
+	<windows.h>
+
